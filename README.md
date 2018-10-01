@@ -1,10 +1,7 @@
 This is a test of Raix:push implementation (https://github.com/raix/push) a modified old version of obsolete https://github.com/elvismercado/meteor-raix-push-demo
 
-The app runs on local and runs on remote ios device.
-The app asks for notification permission.
-Server is able to send send notification but it is never delivered to ios device (even to unfocused app).
 
-## Basic setup
+## Setup
 
 **Compiled on/with:**
 Mac OSX, 
@@ -38,3 +35,7 @@ I20181001-20:54:58.149(2)? Push, GUIDE: The "Push.appCollection" - No GCM client
 
 ## the problem
 The push notifications are not delivered on iso device (I have not tested the Android in this test version)
+
+The app runs on localhost and on remote ios device in developement mode.
+The app correctly asks for notification permission.
+Server is able to send send notification but the notification is never delivered to ios device (even to unfocused app).
