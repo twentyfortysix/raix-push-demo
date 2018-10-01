@@ -6,7 +6,7 @@ Server is able to send send notification but it is never delivered to ios device
 
 ## Basic setup
 
-Compiled on/with:
+**Compiled on/with:**
 Mac OSX, 
 Meteor 1.7.1-beta.14, 
 Xcode Version 9.2 (9C40b)
@@ -14,7 +14,7 @@ Xcode Version 9.2 (9C40b)
 the config is done via Push.Configure (not in config.push.json)
 
 
-cordova plugins:
+**cordova plugins:**
 cordova-plugin-device@1.1.6
 phonegap-plugin-push@2.1.0
 (I know the latest raix:push uses 2.2.3 installed as npm package but it never worked for me)
@@ -22,7 +22,10 @@ phonegap-plugin-push@2.1.0
 Certificates are not part of the test package
 (mine worked and tested based on :https://medium.com/@acarabott/meteor-native-ios-push-notifications-heroku-raix-push-cordova-213f486c4e6d)
 
-server log after notification push:
+**Xcode:**
+Signing set to my profile (Automatically managed signing), Push notifications turned on in Capabilities
+
+**server log after notification push:**
 
 ```
 Push: Sent message "Hello World" to 1 ios apps 0 android apps
