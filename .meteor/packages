@@ -7,7 +7,7 @@
 meteor-platform
 autopublish
 insecure
-raix:push
+raix:push@3.0.3-rc.5
 accounts-password
 ian:accounts-ui-bootstrap-3
 twbs:bootstrap

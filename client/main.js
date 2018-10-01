@@ -1,3 +1,19 @@
+
+// allow send push form client side
+Push.allow({
+  send: function(userId, notification) {
+    return true; // Allow all users to send
+  }
+});
+Push.Configure({
+  ios: {
+    alert: true,
+    badge: true,
+    sound: true,
+    clearBadge: true
+  }
+});
+
 Template.row.helpers({
 	notificationHistory: function () {
 		var query = {};
@@ -31,7 +47,7 @@ Meteor.startup(function () {
 
 	Push.addListener('message', function(notification) {
 		// Called on every message
-		console.log(JSON.stringify(notification))
+		console.log(JSON.stringify(notification));
 
 		function alertDismissed() {
 			NotificationHistory.update({_id: notification.payload.historyId}, {
@@ -42,4 +58,4 @@ Meteor.startup(function () {
 		}
 		alert(notification.message, alertDismissed, notification.payload.title, "Ok");
 	});
-})
+});
