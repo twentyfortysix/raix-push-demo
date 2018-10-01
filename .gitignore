@@ -5,6 +5,8 @@ private/ios/apn-development/PushChat.certSigningRequest
 private/ios/apn-development/PushChatCert.pem
 private/ios/apn-development/PushChatKey.p12
 private/ios/apn-development/PushChatKey.pem
+private/ios/apn-development/meteorApp-key-dev.pem
+private/ios/apn-development/meteorApp-cert-dev.pem
 private/ios/apn-production/aps_production.cer
 private/ios/apn-production/ck.pem
 private/ios/apn-production/PushChat.certSigningRequest
